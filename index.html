@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Информация о ценах</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div>
+            <form action="" method="post" name="form">                
+                <div class="fieldset" id="elementParent">
+                    <center><b>Информация о товарах</b></center>
+                    <div id="container">                                            
+                        <label for="date">Выберите дату:</label><br/>
+                        <input name="date" id="date" type="text" size="20" maxlength="20" value="2021-01-13"/>                    
+                        <br/>
+                        <br/>
+                        <ul><li id="1_0" class="button" onClick="SubmitDownAjax();">Отправить</li></ul>
+                    </div>
+                    <div id="info"></div>                  
+                </div>                
+            </form>            
+        </div>
+        <div  id="div" onClick="focusDiv();"></div>
+        <div id="progressBar" onDblClick="focusPbDouble();">Процесс...</div>
+    </body>
+</html>
+    
