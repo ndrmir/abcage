@@ -312,7 +312,6 @@ class CostModel
         $PDO = $this->ObjDb->connect();
 
         $date = htmlspecialchars($_POST['date']);
-        $date = '2020-01-27';
 
         if (empty($date)) {
             self::errorMessage("Введите дату!");
